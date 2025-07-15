@@ -1,0 +1,22 @@
+<html>
+  <head>
+    <title>HTA Example 7</title>
+    <HTA:APPLICATION
+      APPLICATIONNAME="HTA Example 7"
+      SCROLL="yes"
+      SINGLEINSTANCE="yes"
+      WINDOWSTATE="normal"
+    />
+  </head>
+  <body>
+    <h1>HTA Example 7</h1>
+    <p>Current Date and Time: <span id="dateTime"></span></p>
+
+    <script>
+      setInterval(function () {
+        var now = new Date();
+        document.getElementById("dateTime").innerText = now.toLocaleString();
+      }, 1000);
+    </script>
+  </body>
+</html>

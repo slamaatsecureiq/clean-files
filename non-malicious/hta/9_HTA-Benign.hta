@@ -1,0 +1,26 @@
+<html>
+  <head>
+    <title>HTA Example 9</title>
+    <HTA:APPLICATION
+      APPLICATIONNAME="HTA Example 9"
+      SCROLL="yes"
+      SINGLEINSTANCE="yes"
+      WINDOWSTATE="normal"
+    />
+  </head>
+  <body>
+    <h1>HTA Example 9</h1>
+    <button onclick="showConfirmation()">Show Confirmation</button>
+
+    <script>
+      function showConfirmation() {
+        var result = confirm("Are you sure you want to proceed?");
+        if (result) {
+          alert("You clicked OK!");
+        } else {
+          alert("You clicked Cancel.");
+        }
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,23 @@
+<html>
+  <head>
+    <title>HTA Example 2</title>
+    <HTA:APPLICATION
+      APPLICATIONNAME="HTA Example 2"
+      SCROLL="yes"
+      SINGLEINSTANCE="yes"
+      WINDOWSTATE="normal"
+    />
+  </head>
+  <body>
+    <h1>HTA Example 2</h1>
+    <form>
+      <label for="inputField">Enter something:</label>
+      <input type="text" id="inputField" name="inputField" />
+      <input
+        type="button"
+        value="Submit"
+        onclick="alert('Entered: ' + inputField.value)"
+      />
+    </form>
+  </body>
+</html>
